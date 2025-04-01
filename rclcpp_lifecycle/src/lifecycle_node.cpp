@@ -202,6 +202,13 @@ LifecycleNode::undeclare_parameter(const std::string & name)
   this->node_parameters_->undeclare_parameter(name);
 }
 
+void
+LifecycleNode::undeclare_all_parameters(const std::string & name)
+{
+  this->node_parameters_->undeclare_all_parameters();
+}
+
+
 bool
 LifecycleNode::has_parameter(const std::string & name) const
 {

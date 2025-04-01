@@ -389,6 +389,15 @@ public:
   void
   undeclare_parameter(const std::string & name);
 
+  /// Undeclare a previously declared parameter.
+  /**
+   * \sa rclcpp::Node::undeclare_all_parameters
+   */
+  RCLCPP_LIFECYCLE_PUBLIC
+  void
+  undeclare_all_parameters();
+
+
   /// Return true if a given parameter is declared.
   /**
    * \sa rclcpp::Node::has_parameter
