@@ -126,6 +126,10 @@ public:
   undeclare_parameter(const std::string & name) override;
 
   RCLCPP_PUBLIC
+  void
+  undeclare_all_parameters() override;
+
+  RCLCPP_PUBLIC
   bool
   has_parameter(const std::string & name) const override;
 
